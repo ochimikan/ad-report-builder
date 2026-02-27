@@ -87,8 +87,7 @@ export function TikTokAdPreview({ headline, description, ctaText, imageUrl, bran
             <span className="text-[10px] text-white/80 border border-white/40 px-1.5 py-0.5 rounded-sm font-medium">広告</span>
           </div>
           {/* Description */}
-          <p className="text-white text-[13px] leading-[18px] mb-1">{headline || '見出しテキスト'}</p>
-          <p className="text-white/80 text-[12px] leading-4 mb-2.5">{description || '説明文がここに表示されます'}</p>
+          <p className="text-white text-[13px] leading-[18px] mb-2.5">{description || '説明文がここに表示されます'}</p>
 
           {/* Music ticker */}
           <div className="flex items-center gap-1.5 mb-3">
