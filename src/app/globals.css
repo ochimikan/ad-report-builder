@@ -45,6 +45,34 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+  /* Simulator theme colors (Indigo) */
+  --color-sim-primary-50: #eef2ff;
+  --color-sim-primary-100: #e0e7ff;
+  --color-sim-primary-200: #c7d2fe;
+  --color-sim-primary-300: #a5b4fc;
+  --color-sim-primary-400: #818cf8;
+  --color-sim-primary-500: #6366f1;
+  --color-sim-primary-600: #4f46e5;
+  --color-sim-primary-700: #4338ca;
+  --color-sim-primary-800: #3730a3;
+  --color-sim-primary-900: #312e81;
+  /* Simulator theme colors (Emerald/Accent) */
+  --color-sim-accent-50: #ecfdf5;
+  --color-sim-accent-100: #d1fae5;
+  --color-sim-accent-200: #a7f3d0;
+  --color-sim-accent-300: #6ee7b7;
+  --color-sim-accent-400: #34d399;
+  --color-sim-accent-500: #10b981;
+  --color-sim-accent-600: #059669;
+  --color-sim-accent-700: #047857;
+  --color-sim-accent-800: #065f46;
+  --color-sim-accent-900: #064e3b;
+  /* Simulator theme colors (Warm/Orange) */
+  --color-sim-warm-50: #fff7ed;
+  --color-sim-warm-100: #ffedd5;
+  --color-sim-warm-400: #fb923c;
+  --color-sim-warm-500: #f97316;
+  --color-sim-warm-600: #ea580c;
 }
 
 :root {
@@ -123,4 +151,34 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Simulator range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: #e2e8f0;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-sim-primary-600);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-sim-primary-600);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
